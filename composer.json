@@ -1,5 +1,5 @@
 {
-    "name": "nicmart/search-config",
+    "name": "comperio/search-config",
     "type": "library",
     "description": "The DomainSpecificQuery configuration for Comperio products",
     "keywords": [],
