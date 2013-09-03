@@ -18,8 +18,8 @@
     },
     "autoload": {
         "psr-0": {
-            "Comperio\DSQ": "src/",
-            "Comperio\DSQ\\Test": "tests"
+            "Comperio\\DSQ": "src/",
+            "Comperio\\DSQ\\Test": "tests"
         }
     }
 }
