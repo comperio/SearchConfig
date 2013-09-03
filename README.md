@@ -1,6 +1,6 @@
 # SearchConfig
-[![Build Status](https://travis-ci.org/nicmart/SearchConfig.png?branch=master)](https://travis-ci.org/nicmart/SearchConfig)
-[![Coverage Status](https://coveralls.io/repos/nicmart/SearchConfig/badge.png?branch=master)](https://coveralls.io/r/nicmart/SearchConfig?branch=master)
+[![Build Status](https://travis-ci.org/comperio/SearchConfig.png?branch=master)](https://travis-ci.org/nicmart/SearchConfig)
+[![Coverage Status](https://coveralls.io/repos/comperio/SearchConfig/badge.png?branch=master)](https://coveralls.io/r/nicmart/SearchConfig?branch=master)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/comperio/SearchConfig/badges/quality-score.png?s=14018ac40c22899e72fc459dac86b28f00021f3b)](https://scrutinizer-ci.com/g/comperio/SearchConfig/)
 
 The DomainSpecificQuery configuration for Comperio products.
