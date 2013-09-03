@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/comperio/DomainSpecificQuery.git",
-                "reference": "e7bea1cdcca2ab4ee0910bf99221650d16d1ea32"
+                "reference": "178dcccd81d2fb075f3350c5c910ef0f79d6133f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/comperio/DomainSpecificQuery/zipball/e7bea1cdcca2ab4ee0910bf99221650d16d1ea32",
-                "reference": "e7bea1cdcca2ab4ee0910bf99221650d16d1ea32",
+                "url": "https://api.github.com/repos/comperio/DomainSpecificQuery/zipball/178dcccd81d2fb075f3350c5c910ef0f79d6133f",
+                "reference": "178dcccd81d2fb075f3350c5c910ef0f79d6133f",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 }
             ],
             "description": "Build and define queries specific to the application domain and compile them into other formats",
-            "time": "2013-09-03 13:33:33"
+            "time": "2013-09-03 14:24:45"
         },
         {
             "name": "nicmart/building",
