@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is part of DomainSpecificQuery
+ * This file is part of SearchConfig
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -17,7 +17,7 @@ use DSQ\Expression\TreeExpression;
 
 /**
  * Class AdvancedUrlCompiler
- * @package DSQ\Comperio
+ * @package Comperio\DSQ
  *
  * This class compile an expression to a querystring-like array.
  * The format of the array reflects the one used in DiscoveryNG in the advanced search
