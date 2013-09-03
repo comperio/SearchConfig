@@ -14,7 +14,7 @@ Just create a composer.json file for your project:
 ```JSON
 {
     "require": {
-        "nicmart/search-config": "dev-master"
+        "comperio/search-config": "dev-master"
     }
 }
 ```
