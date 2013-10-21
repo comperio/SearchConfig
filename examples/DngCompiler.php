@@ -26,6 +26,10 @@ $builder = new ExpressionBuilder('and');
 
 $expression = $builder
     //->field('series', 'asd"sd:')
+    ->binary('>')
+        ->value('foo')
+        ->value(2123)
+    ->end()
     ->and()
         ->field('facets-target', 'm')
         ->field('year', array('from' => 2000, 'to' => 3000))
@@ -50,7 +54,8 @@ $expression = $builder
 
 var_dump($expression);
 $expr = $compiler->compile($expression);
-echo $expr;
+var_dump($expr);
+echo $expr->getMainQuery();
 var_dump(microtime(true) - $start);
 
 $start = microtime(true);
