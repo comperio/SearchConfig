@@ -25,8 +25,8 @@ $start = microtime(true);
 $compiler = new DNGCompiler();
 $queryCompiler = new LuceneQueryCompiler();
 
-$query = isset($_GET['q'])
-        ? $_GET['q']
+$query = isset($_REQUEST['q'])
+        ? $_REQUEST['q']
         : 'autha = Manzoni OR facets-target = m OR tid NOT IN (test:catalog:1, test:catalog:2, test:catalog:3) AND year != 2000'
 ;
 $parser = new Parser(new Grammar);
@@ -51,8 +51,16 @@ function compile($string)
     global $compiler, $lexer, $parser;
     try {
         return (string) $compiler->compile($parser->parse($lexer->lex($string)));
-    } catch (Exception $e) {
-        return $e->getMessage();
+    } catch (\Exception $e) {
+        return 'Error: ' . $e->getMessage();
+    }
+}
+
+if (isset($_REQUEST['action'])) {
+    switch ($_REQUEST['action']) {
+        case 'compile':
+            echo compile($_REQUEST['query']);
+            exit();
     }
 }
 
@@ -123,6 +131,8 @@ $examples = array(
     'fldin_str_bid' => 'value',
     'solr' => 'value',
 );
+
+ksort($examples);
 ?>
 <html>
 <head>
@@ -147,12 +157,25 @@ $examples = array(
                     <label for="dng">DNG Url</label>
                     <input type="text" class="form-control" name="dng" placeholder="http://your-dng-url.com" value="http://opac.provincia.brescia.it/">
                 </div>
-                <button type="submit" class="btn btn-default" value="query">Compile to Solr</button>
-                <button type="submit" class="btn" value="dng">View in DNG</button>
+                <button type="submit" class="btn btn-default" value="dng">View in DNG</button>
             </form>
+
+            <b>Compiled Lucene query: </b>
+                    <pre id="compiled-query">Write a ClavisQuery and see the live result here</pre>
         </div>
     </div>
     <div class="row"><div class="col-lg-12">
+        <p>
+            <h4>Some examples:</h4>
+            <i>Simple equalities with boolean operators: </i><code>autha = manzoni AND (title = (promessi sposi) OR title = "cinque maggio")</code><br>
+            <i>The same with IN operator: </i><code>autha = manzoni AND title IN ((promessi sposi), "cinque maggio")</code><br>
+            <i>Not equal operator: </i><code>autha != manzoni</code><br>
+            <i>Nested Values: </i><code>subj-and-type = (t = G, s = "Religioni")</code><br>
+            <i>Comparison operators (not ready yet): </i><code>year >= 2010</code><br>
+            <i>Negations: </i><code>autha = manzoni AND NOT title = promessi</code>
+
+        </p>
+        <h4>Fields configuration:</h4>
         <table class="table table-striped">
             <thead>
             <tr>
@@ -182,6 +205,17 @@ $examples = array(
 
     </div></div>
 </div>
-
+<script>
+    (function ($) {
+        $(document).ready(function() {
+           $('[name="query"]').on('input', function() {
+                $('#compiled-query').show().load(
+                    '',
+                    {"action": "compile", "query": $(this).val()}
+                );
+           });
+        });
+    })(jQuery);
+</script>
 </body>
 </html>
