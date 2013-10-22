@@ -61,6 +61,9 @@ if (isset($_REQUEST['action'])) {
         case 'compile':
             echo compile($_REQUEST['query']);
             exit();
+        case 'dng':
+            header('Location: ' . $_REQUEST['dng'] . '/opac/search/lst?solr=' . urlencode(compile($_REQUEST['query'])));
+            exit();
     }
 }
 
@@ -155,8 +158,9 @@ ksort($examples);
                 </div>
                 <div class="form-group">
                     <label for="dng">DNG Url</label>
-                    <input type="text" class="form-control" name="dng" placeholder="http://your-dng-url.com" value="http://opac.provincia.brescia.it/">
+                    <input type="text" class="form-control" name="dng" placeholder="http://your-dng-url.com" value="http://opac.provincia.brescia.it">
                 </div>
+                <input type = "hidden" name="action" value="dng">
                 <button type="submit" class="btn btn-default" value="dng">View in DNG</button>
             </form>
 
