@@ -76,6 +76,7 @@ class DNGCompiler extends CompilerChain
             ->map('facets-subject', $m->attr($m->field('facets_subject'), array('filter' => true)))
             ->map('facets-lang', $m->attr($m->field('facets_lang'), array('filter' => true)))
             ->map(array('facets-date', 'year'), $m->attr($m->field('sorti_date'), array('filter' => true)))
+            ->mapByTypeAndOp(array('facets-date', 'year'), array('>', '>=', '<', '<='), array($luceneCompiler, 'comparisonFieldExpression'))
             ->map('facets-place', $m->attr($m->field('facets_place'), array('filter' => true)))
             ->map('facets-country', $m->attr($m->field('facets_country'), array('filter' => true)))
             ->map('facets-owner', $m->attr($m->field('facets_owner'), array('filter' => true)))
