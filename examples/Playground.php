@@ -31,9 +31,8 @@ $query = isset($_REQUEST['q'])
 ;
 $parser = new Parser(new Grammar);
 $lexer = new Lexer;
-$expression = $parser->parse($lexer->lex($query));
 //var_dump($expression);
-$luceneQuery = $compiler->compile($expression);
+
 //var_dump($luceneQuery);
 /*printf("<b>Input query:</b><br>");
 printf("<pre>$query</pre>");
@@ -202,7 +201,6 @@ ksort($examples);
                         <code class="text-info"><?php echo substr(compile($fieldname .  ' = ' . $value), 1, -1); ?></code><br>
                         <?php endforeach; ?>
                     </td>
-
                 </tr>
             <?php endforeach; ?>
             </tbody></table>

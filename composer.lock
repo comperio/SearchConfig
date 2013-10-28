@@ -11,18 +11,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/comperio/DomainSpecificQuery.git",
-                "reference": "460577109b67cc54ced4d8eb2b2b9ad24d98f48d"
+                "reference": "cf62eed178f0ee402f70ce4619a425149f48df77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/comperio/DomainSpecificQuery/zipball/460577109b67cc54ced4d8eb2b2b9ad24d98f48d",
-                "reference": "460577109b67cc54ced4d8eb2b2b9ad24d98f48d",
+                "url": "https://api.github.com/repos/comperio/DomainSpecificQuery/zipball/cf62eed178f0ee402f70ce4619a425149f48df77",
+                "reference": "cf62eed178f0ee402f70ce4619a425149f48df77",
                 "shasum": ""
             },
             "require": {
                 "jakubledl/dissect": "~1",
                 "nicmart/building": "dev-master",
                 "nicmart/string-template": "dev-master",
+                "nicmart/universal-matcher": "dev-master",
                 "php": ">=5.3.3"
             },
             "require-dev": {
@@ -47,7 +48,7 @@
                 }
             ],
             "description": "Build and define queries specific to the application domain and compile them into other formats",
-            "time": "2013-10-22 09:15:38"
+            "time": "2013-10-28 15:27:01"
         },
         {
             "name": "jakubledl/dissect",
@@ -183,6 +184,47 @@
             ],
             "description": "StringTemplate is a very simple string template engine for php. I've written it to have a thing like sprintf, but with named and nested substutions.",
             "time": "2013-08-20 18:39:59"
+        },
+        {
+            "name": "nicmart/universal-matcher",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nicmart/UniversalMatcher.git",
+                "reference": "fdcd95ff2e509f93022101c2f92de68af93a93a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nicmart/UniversalMatcher/zipball/fdcd95ff2e509f93022101c2f92de68af93a93a5",
+                "reference": "fdcd95ff2e509f93022101c2f92de68af93a93a5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "UniversalMatcher": "src/",
+                    "UniversalMatcher\\Test": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolò Martini",
+                    "email": "nicmartnic@gmail.com",
+                    "homepage": "http://nicolo.martini.io"
+                }
+            ],
+            "description": "A rules based matcher engine for php",
+            "time": "2013-10-28 13:29:53"
         }
     ],
     "packages-dev": [
@@ -192,12 +234,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "e62f205c834a23e3a8c5933b1748f3336721bcc1"
+                "reference": "525576eb863b9e2ff6af98d959cdf390f2571ddc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/e62f205c834a23e3a8c5933b1748f3336721bcc1",
-                "reference": "e62f205c834a23e3a8c5933b1748f3336721bcc1",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/525576eb863b9e2ff6af98d959cdf390f2571ddc",
+                "reference": "525576eb863b9e2ff6af98d959cdf390f2571ddc",
                 "shasum": ""
             },
             "require": {
@@ -276,7 +318,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2013-10-16 00:14:18"
+            "time": "2013-10-24 00:04:09"
         },
         {
             "name": "psr/log",
@@ -441,12 +483,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "608960cd7f7e906e64d6586b9152e308f7ea0ff2"
+                "reference": "662a2922e0bcb3669e66ab36c20ce508c68b1d46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/608960cd7f7e906e64d6586b9152e308f7ea0ff2",
-                "reference": "608960cd7f7e906e64d6586b9152e308f7ea0ff2",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/662a2922e0bcb3669e66ab36c20ce508c68b1d46",
+                "reference": "662a2922e0bcb3669e66ab36c20ce508c68b1d46",
                 "shasum": ""
             },
             "require": {
@@ -485,7 +527,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2013-10-16 16:16:10"
+            "time": "2013-10-23 08:18:42"
         },
         {
             "name": "symfony/event-dispatcher",
