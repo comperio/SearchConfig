@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/comperio/DomainSpecificQuery.git",
-                "reference": "71331cd501a322c4ffe1604bb2657d73dc77cf3c"
+                "reference": "e7fe782170b67bcafca63d15cc9732d061915753"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/comperio/DomainSpecificQuery/zipball/71331cd501a322c4ffe1604bb2657d73dc77cf3c",
-                "reference": "71331cd501a322c4ffe1604bb2657d73dc77cf3c",
+                "url": "https://api.github.com/repos/comperio/DomainSpecificQuery/zipball/e7fe782170b67bcafca63d15cc9732d061915753",
+                "reference": "e7fe782170b67bcafca63d15cc9732d061915753",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,7 @@
                 }
             ],
             "description": "Build and define queries specific to the application domain and compile them into other formats",
-            "time": "2013-10-28 17:04:10"
+            "time": "2013-10-29 10:11:15"
         },
         {
             "name": "jakubledl/dissect",

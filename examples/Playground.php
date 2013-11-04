@@ -174,7 +174,7 @@ ksort($examples);
             <i>The same with IN operator: </i><code>autha = manzoni AND title IN ((promessi sposi), "cinque maggio")</code><br>
             <i>Not equal operator: </i><code>autha != manzoni</code><br>
             <i>Nested Values: </i><code>subj-and-type = (t = G, s = "Religioni")</code><br>
-            <i>Comparison operators (not ready yet): </i><code>year >= 2010</code><br>
+            <i>Comparison operators: </i><code>year >= 2010</code><br>
             <i>Negations: </i><code>autha = manzoni AND NOT title = promessi</code>
 
         </p>
