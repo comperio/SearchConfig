@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/comperio/DomainSpecificQuery.git",
-                "reference": "e7fe782170b67bcafca63d15cc9732d061915753"
+                "reference": "49e4d77b4687c110d6a14e911463c0bd6d136f55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/comperio/DomainSpecificQuery/zipball/e7fe782170b67bcafca63d15cc9732d061915753",
-                "reference": "e7fe782170b67bcafca63d15cc9732d061915753",
+                "url": "https://api.github.com/repos/comperio/DomainSpecificQuery/zipball/49e4d77b4687c110d6a14e911463c0bd6d136f55",
+                "reference": "49e4d77b4687c110d6a14e911463c0bd6d136f55",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,7 @@
                 }
             ],
             "description": "Build and define queries specific to the application domain and compile them into other formats",
-            "time": "2013-10-29 10:11:15"
+            "time": "2013-11-04 16:13:31"
         },
         {
             "name": "jakubledl/dissect",
@@ -191,12 +191,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nicmart/UniversalMatcher.git",
-                "reference": "fdcd95ff2e509f93022101c2f92de68af93a93a5"
+                "reference": "96161b40d0df005a8c7c0a2eb24557586ba5b736"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nicmart/UniversalMatcher/zipball/fdcd95ff2e509f93022101c2f92de68af93a93a5",
-                "reference": "fdcd95ff2e509f93022101c2f92de68af93a93a5",
+                "url": "https://api.github.com/repos/nicmart/UniversalMatcher/zipball/96161b40d0df005a8c7c0a2eb24557586ba5b736",
+                "reference": "96161b40d0df005a8c7c0a2eb24557586ba5b736",
                 "shasum": ""
             },
             "require": {
@@ -224,7 +224,7 @@
                 }
             ],
             "description": "A rules based matcher engine for php",
-            "time": "2013-10-28 13:29:53"
+            "time": "2013-11-04 15:12:18"
         }
     ],
     "packages-dev": [
@@ -234,12 +234,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "525576eb863b9e2ff6af98d959cdf390f2571ddc"
+                "reference": "a280594ffbb1b563a0f042182221f39e7de9efa3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/525576eb863b9e2ff6af98d959cdf390f2571ddc",
-                "reference": "525576eb863b9e2ff6af98d959cdf390f2571ddc",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/a280594ffbb1b563a0f042182221f39e7de9efa3",
+                "reference": "a280594ffbb1b563a0f042182221f39e7de9efa3",
                 "shasum": ""
             },
             "require": {
@@ -318,7 +318,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2013-10-24 00:04:09"
+            "time": "2013-11-02 21:40:25"
         },
         {
             "name": "psr/log",
@@ -435,12 +435,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
-                "reference": "9a3c831697349cf6e9b5302b7beb0b97e6cdac41"
+                "reference": "a199b9784fadfe18590db3d240904b127a78e718"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/9a3c831697349cf6e9b5302b7beb0b97e6cdac41",
-                "reference": "9a3c831697349cf6e9b5302b7beb0b97e6cdac41",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/a199b9784fadfe18590db3d240904b127a78e718",
+                "reference": "a199b9784fadfe18590db3d240904b127a78e718",
                 "shasum": ""
             },
             "require": {
@@ -474,7 +474,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "http://symfony.com",
-            "time": "2013-09-19 09:47:34"
+            "time": "2013-10-31 19:29:46"
         },
         {
             "name": "symfony/console",
@@ -483,12 +483,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "662a2922e0bcb3669e66ab36c20ce508c68b1d46"
+                "reference": "92cdb410d68c7b6ccb6eb38ad0ffe4e2d1cd9a2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/662a2922e0bcb3669e66ab36c20ce508c68b1d46",
-                "reference": "662a2922e0bcb3669e66ab36c20ce508c68b1d46",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/92cdb410d68c7b6ccb6eb38ad0ffe4e2d1cd9a2c",
+                "reference": "92cdb410d68c7b6ccb6eb38ad0ffe4e2d1cd9a2c",
                 "shasum": ""
             },
             "require": {
@@ -527,7 +527,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2013-10-23 08:18:42"
+            "time": "2013-10-31 16:40:24"
         },
         {
             "name": "symfony/event-dispatcher",

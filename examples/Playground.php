@@ -176,7 +176,6 @@ ksort($examples);
             <i>Nested Values: </i><code>subj-and-type = (t = G, s = "Religioni")</code><br>
             <i>Comparison operators: </i><code>year >= 2010</code><br>
             <i>Negations: </i><code>autha = manzoni AND NOT title = promessi</code>
-
         </p>
         <h4>Fields configuration:</h4>
         <table class="table table-striped">
